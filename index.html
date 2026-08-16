@@ -1,0 +1,3026 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran khan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+      margin: 0 !important;
+      padding: 0 !important;
+      flex-shrink: 0 !important;
+      scrollbar-width: none;
+    }
+:root {
+  --link-color: rgb(54, 54, 54);;
+}
+    a {
+      text-decoration: none;
+    }
+    h1, h2 , h3 , h4 , h5 ,h6 , strong , span , p , a {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+input {
+  border: none;
+  outline: none;
+}
+    if-block {
+      display: none;
+    }
+
+   /* Phones (Portrait) */
+@media (max-width: 480px) {
+  if-block[device*="phone"] {
+    display: contents;
+  }
+  .form-header {
+    justify-content: center;
+  }
+  .form-img {
+    position: relative !important;
+  }
+  .form-img img {
+    width: 50% !important;
+  }
+}
+
+/* Phones (Landscape) and Small Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  if-block[device*="tab"] {
+    display: contents;
+  }
+}
+
+/* Tablets (Landscape) and Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  if-block[device*="lap"] {
+    display: contents;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  if-block[device*="pc"] {
+    display: contents;
+  }
+}
+
+/* Large Desktops / TVs */
+@media (min-width: 1441px) {
+  if-block[device*="tv"] {
+    display: contents;
+  }
+}
+
+    body {
+      display: flex;
+      overflow: hidden;
+      width: 100dvw;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      if-block[theme=dark] {
+        display: contents;
+      }
+      if-block[theme=light] {
+        display: none;
+      }
+}
+
+@media (prefers-color-scheme: light) {
+if-block[theme=dark] {
+        display: none;
+      }
+      if-block[theme=light] {
+        display: contents;
+      }
+}
+target-block {
+  display: none;
+}
+target-block[data-active="true"] {
+  display: contents;
+}
+
+
+img {
+    width: 100%;
+    user-select: none !important;
+     -webkit-user-drag: none;
+}
+
+.___layout {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+  overflow-x: hidden ;
+  overflow-y: scroll;
+}
+
+.page {
+    display: flex;
+    overflow: hidden;
+}
+.layout-pc .landing-head {
+  position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.layout-pc .landing-head img {
+  height: 100%;
+}
+.layout-pc .landing-head img:first-child {
+    height: 100%;
+    width: 100%;
+}
+ .___layout {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+@media (max-width: 480px) {
+  .layout-phone {
+        display: flex;
+    }
+ .layout-pc {
+        display: none;
+    }
+}
+@media (min-width: 481px) {
+   .layout-phone {
+        display: none;
+    }
+  .layout-pc {
+        display: flex;
+    } 
+}
+.layout-pc .blend-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.layout-pc .blend-image::before {
+content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url('https://i.pinimg.com/originals/91/95/f4/9195f4dd1b69f90038f627c8af422429.gif');
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 400ms;
+}
+.layout-pc .blend-image--active::before {
+  
+  opacity: 0.2;
+}
+.layout-pc .blend-image::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(255, 255, 255));
+}
+.layout-pc {
+  background-color: rgb(194, 194, 194);
+}
+.layout-pc .blend-image img {
+  position: absolute;
+    transform: rotate(180deg) scaleX(-1);
+    width: 100%;
+    height: 100%;
+}
+.layout-pc .nav {
+    align-self: center;
+    position: fixed;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    /* background-color: red; */
+    border-radius: 2dvh;
+    z-index: +999;
+    overflow: hidden;
+    border: 2px solid rgb(231, 231, 231);
+}
+
+/* Fake the blur using a pseudo-element */
+ .layout-pc .nav::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit; /* copy the page background */
+    filter: blur(10px);
+    z-index: -1;
+}
+.layout-pc .landing-head .blend {
+  width: 100%;
+  background: linear-gradient(to bottom, white , transparent);
+  position: absolute;
+  top: 0;
+  
+}
+.layout-pc .profile-photo {
+  
+  position: relative;
+  background-color: green;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('backendpfp.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  border-color: rgb(255, 255, 255);
+  border-style: double;
+}
+
+.layout-pc .landing-head-content {
+  position: absolute;
+  
+  width: 100%;
+  display: flex;
+  transition: opacity 800ms;
+  justify-content: center;
+  
+}
+.layout-pc .landing-head .welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  border-style: solid;
+  border-top: 0;
+  border-bottom: 0;
+}
+.layout-pc .landing-head .welcome h1 {
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.8);
+}
+.layout-pc .landing-head .welcome h2 {
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.8);
+}
+.layout-pc .landing-head .welcome h3 {
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.6);
+}
+
+.layout-pc .nav-contents {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#indicator-about-me {
+  
+}
+.layout-pc .nav-contents__section {
+  
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  color: #111111;
+  
+  
+}
+.layout-pc .nav-contents__section span {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 700;
+  opacity: 0;
+  bottom: 0;
+transform: translateY(0%) scale(0.9);
+transition: transform 200ms , opacity 200ms;
+
+}
+.layout-pc .nav-contents__section i {
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    transition: transform 200ms;
+  
+}
+/* .layout-pc .nav-contents__section:hover span {
+  display: flex;
+animation: nav-contents__section__span--show 200ms;
+} */
+.layout-pc .nav-contents__section:hover i {
+  
+animation: nav-contents__section__i--move 200ms;
+}
+@keyframes nav-contents__section__span--show {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  border-radius: 99dvh;
+  left: 0;
+  transition: width 400ms;
+  
+}
+#pc-experience-section {
+  background: url('https://i.postimg.cc/c1tGBTpq/sajsaupscalemedia-transformed.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.nav-contents main {
+  position: absolute;
+  height: 100%;
+}
+._nav-contents__section--active i {
+  color: rgb(63, 63, 63);
+
+}
+._nav-contents__section--active aside {
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+  position: absolute;
+  bottom: 0;
+  z-index: +1;
+}
+._nav-contents__section--active span {
+  color: rgb(63, 63, 63);
+}
+.nav-contents__section * {
+  transition: color 200ms;
+}
+.landing-head-content-inactive {
+  
+  opacity: 0.5;
+}
+.about-me-card {
+  position: relative;
+  background: linear-gradient(to top, rgba(233, 233, 233, 0.8) , rgb(255, 255, 255 , 0.8));
+  z-index: 2;
+  border-radius: calc(1dvh + 1dvw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  border: 2px solid rgb(233, 233, 233);
+}
+.about-me-card__heading {
+   font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ display: flex;
+ align-items: flex-end;
+ color: #3b3b3b;
+ 
+}
+.about-me-card__row {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.about-me-card__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.about-me-card__detail__heading {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #505050;
+}
+.about-me-card__detail__heading span {
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  margin-left: 1ch !important;
+  color: #505050;
+  font-family: "Russo One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.about-me-card__detail ul {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  align-self: center;
+  
+}
+.about-me-card__detail ul li  {
+    font-family: "Russo One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  max-width: 100%;
+  color: #505050;
+  list-style-type: disc;
+}
+.blend-image--active .about-me-card {
+  
+  animation: 800ms about-me-card--active;
+  
+  opacity: 1;
+}
+@keyframes about-me-card--active {
+  0% {
+    transform: translate(0 , 15%) scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+transform: translate(0 , -0%) scale(1);
+    opacity: 1;
+  }
+}
+.blend-image--normal .about-me-card {
+animation: 800ms about-me-card--normal;
+}
+@keyframes about-me-card--normal {
+  0% {
+    transform: translate(0 , 0%) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+transform: translate(0 , 15%) scale(0.9);
+    opacity: 0;
+  }
+}
+.pc-about-id {
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  
+}
+.experience-heading {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.experience-heading h1 {
+  
+  font-style: normal;
+  
+}
+.experience-heading h2 {
+
+  font-style: normal;
+}
+.worked-card {
+  position: relative;
+  background-color: rgb(219, 219, 219 , 0.5);
+border-radius: calc(1dvh + 1dvw);
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 200ms , background 200ms;
+
+}
+.worked-card:hover {
+  
+  background-color: rgb(219, 219, 219 , 0.7);
+  
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.experience-section .row {
+  flex-wrap: wrap;
+  align-content: start;
+  justify-content: space-between;
+  overflow-y: scroll;
+  
+  
+}
+.worked_card__image {
+  background-color: red;
+  border-radius: calc(1dvh + 1dvw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.worked_card__image img {
+  width: 100%;
+  min-height: 100%;
+}
+.worked_card__name {
+  
+  color: #303030;
+  display: flex;
+  align-items: center;
+  
+}
+
+.worked_card__name span {
+  max-height: 100%;
+  max-width: 100%;
+  overflow-y: scroll;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.worked-card p {
+align-self: center;
+overflow-y: scroll;
+font-weight: 600;
+color: #505050;
+
+}
+.worked-card__location {
+  position: absolute;
+  align-self: center;
+  color: rgb(27, 27, 27);
+  
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+  color: #505050;
+}
+
+.worked-card__location span {
+  max-height: 100%;
+  overflow-x: scroll;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #505050;
+  display: flex;
+}
+.contact-section  {
+  position: relative;
+  overflow: hidden;
+}
+.contact-section::after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(238, 238, 238));
+  content: "";
+}
+
+.experience-section {
+  position: relative;
+}
+.worked-card {
+  z-index: 1;
+}
+.experience-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgb(238 , 238, 238) , transparent);
+  
+}
+.contact-section__background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: rgb(238, 238, 238);
+  animation: backgroundAnimate 15s infinite linear;
+  
+}
+.contact-section::before {
+    content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgb(238, 238, 238) , transparent);
+}
+.contact-section {
+   background-color: rgb(238, 238, 238);
+background-size: 100% auto;
+background-repeat: repeat-y;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* animation: backgroundAnimate 3s infinite linear; */
+}
+
+@keyframes backgroundAnimate {
+  0% {
+    background-position-y: 0%;
+  }
+  100% {
+    background-position-y: -200%;
+  }
+}
+.experience-heading {
+  transition: 800ms;
+
+}
+.worked-card {
+   transition: 800ms;
+   transition-delay: 200ms;
+}
+.experience-section--normal .experience-heading {
+opacity: 0;
+transform: translate(0 , 3%);
+}
+.experience-section--normal .worked-card {
+  transform: translate(0 , 25%) scale(0.9) skew(-1deg);
+  opacity: 0;
+}
+.pc-experience-id {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translate(0 , 15%);
+  opacity: 0;
+  transform: scale(0);
+  
+}
+
+
+@keyframes  rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-section .row {
+  position: relative;
+  z-index: +1;
+  align-items: center;
+}
+.contact-section__details {
+  z-index: +1;
+}
+.contact-section .background {
+  position: absolute;
+  right: 0;
+  animation: rotater 8s infinite linear;
+}
+.contact-section__details__heading {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contact-section__details__heading h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.8);
+}
+.layout-pc .contact-section__details aside {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  overflow-y: scroll;
+  width: 100%;
+  justify-content: flex-start;
+  
+  
+}
+.layout-pc .contact-details__detail:hover {
+  transform: scale(1.020) translate(0 , 3%);
+  
+}
+.layout-pc .contact-details__detail:hover i {
+  color: #555555;
+}
+.layout-pc .contact-details__detail:hover span {
+  color: #555555;
+}
+.layout-pc .contact-details__detail:active {
+  transform: scale(0.950);
+
+}
+.layout-pc .contact-details__detail {
+    border: none;
+  outline: none;
+  background-color: transparent;
+cursor: pointer;
+display: flex;
+align-items: center;
+transition: 100ms;
+
+}
+.layout-pc .contact-details__detail i {
+  color: rgb(0, 0, 0 , 0.8);
+}
+.layout-pc .contact-details__detail span {
+  overflow-y: scroll;
+  max-height: 100%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.8);
+}
+.layout-pc .dom-hidden {
+  display: none;
+  position: fixed;
+  top: -100000dvh;
+  left: 100000dvw;
+  opacity: 0;
+  z-index: -1;
+  height: 0;
+  width: 0;
+  transform: scale(0);
+}
+
+
+.layout-phone .phone-landing-head {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+background: url('https://i.pinimg.com/564x/da/35/75/da3575b8d96fc2651bd5aaca2945d068.jpg');  
+background-size: 100% 100%;
+
+
+}
+.layout-phone .phone-landing-head::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, white, transparent);
+}
+.phone-nav {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  border-radius: calc(1dvh + 1dvw);
+  align-self: center;
+  z-index: +999;
+  border: 2px solid rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+}
+.phone-nav-contents {
+  position: relative;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+
+.phone-nav-contents__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+overflow: hidden;
+}
+.phone-nav-contents__content main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: transform 200ms , opacity 200ms;
+}
+.phone-nav-contents__content * {
+  color: #303030;
+  user-select: none;
+
+}
+.phone-nav-contents__content h1 {
+  position: absolute;
+  bottom: 0;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  
+}
+.phone-nav-contents__content--active {
+
+}
+.phone-nav-contents__content--active h1 {
+  display: flex !important;
+animation: phone-nav-contents__content--active__h1---show-up 200ms;
+}
+@keyframes phone-nav-contents__content--active__h1---show-up {
+  0% {
+    opacity: 0;
+    transform: translate(0 , 100%);
+  }
+  100% {
+       opacity: 1;
+    transform: translate(0 , 0%);
+  }
+}
+.phone-nav-contents__content--active main {
+  transform: translate(0 , -50%);
+}
+
+.phone-nav-contents__content aside {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  opacity: 0;
+  width: 0;
+  background-color: red;
+}
+.phone-nav-contents__content__aside--active {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+.phone-nav-contents__content h1 span {
+  display: inline-flex;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  
+  white-space: nowrap;
+}
+
+.phone-progress-bar {
+  height: 2px;
+  transition: width 400ms;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(22, 22, 22);
+}
+.phone-blend-image {
+
+  position: relative;
+}
+.phone-blend-image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: url('https://i.pinimg.com/564x/da/35/75/da3575b8d96fc2651bd5aaca2945d068.jpg');
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  transform: rotate(180deg) scaleX(-1);
+  
+}
+
+.phone-welcome {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  z-index: +1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: phone-welcome--welcome 2500ms;
+  animation: phone-welcome--normal 1s infinite ;
+}
+.phone-profile {
+  background-color: green;
+  border-radius: 50%;
+  border-style: double;
+  border-color: white;
+  background: url('backendpfp.jpg');
+  background-size: 100% 100%;
+}
+.phone-welcome h1 {
+
+}
+.phone-welcome h2 {
+
+}
+.phone-welcome * {
+    font-family: 'Archivo Black';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0 , 0.8);
+  text-align: center;
+}
+.phone-welcome h3 {
+  color: rgb(0, 0, 0 , 0.6);
+}
+@keyframes phone-welcome--welcome {
+  0% {
+    opacity: 0.1;
+    transform: translate(0 , 15%);
+  }
+  50% {
+        opacity: 0.9;
+    transform: translate(0 , -1%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0 , 0%);
+  }
+}
+@keyframes  phone-welcome--normal {
+  0% {
+    transform: translate(0 , 0%);
+  }
+  50% {
+    transform: translate(0 , -0.5%);
+  }
+  100% {
+    transform: translate(0 , 0);
+  }
+}
+
+
+.phone-about-me-card {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: calc(1dvh + 1dvw);
+
+  /* Glassmorphism background */
+  
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px);  */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* optional frosted border */
+  transition: transform 600ms , background 800ms;
+}
+
+.phone-about-me-card-active {
+background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+}
+
+.phone-about-me-card-normal {
+background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+transform: translate(-50%, 0) scale(0.850);
+}
+.phone-about-me-card-normal  * {
+  opacity: 0;
+  
+}
+.phone-about-me-card * {
+  transition: opacity 400ms;
+}
+.phone-about-me__heading {
+
+display: flex;
+align-items: center;
+align-self: center;
+}
+
+.phone-about-me__heading h1 {
+   font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(22, 22, 22);
+}
+.phone-about-me__detail {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.phone-about-me__detail aside {
+  align-self: center;
+ display: flex;
+ align-items: center;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(78, 78, 78);
+  
+}
+.phone-about-me__detail aside span {
+  background-color: rgb(78, 78, 78);
+  display: flex;
+  border-radius: 50%;
+  border: none;
+  
+}
+.phone-about-me__detail aside h3 {
+display: inline-flex;
+}
+.phone-about-me__detail__details {
+  
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  
+  align-content: start;
+  overflow-y: scroll;
+  
+}
+.phone-about-me__detail__details__detail {
+display: flex;
+align-items: center;
+}
+.phone-about-me__detail__details__detail span {
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(19, 19, 19);
+ 
+}
+.phone-about-me__detail__details__detail h1 {
+  color: rgb(77, 77, 77);
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+
+.phone-scroller-section {
+  
+  height: 1px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  
+  
+}
+#phone-about-me {
+  bottom: 0 !important;
+}
+.phone-experience {
+  width: 100%;
+ background-color: rgb(231, 231, 231); 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.phone-blend-image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgb(231, 231, 231) , transparent);
+  bottom: 0;
+  z-index: +1;
+}
+.phone-experience-heading {
+  width: 90%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 400ms , opacity 400ms;
+}
+.phone-experience-heading * {
+  color: #141414;
+}
+.phone-experience-works {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  align-items: center;
+}
+.phone-work {
+  background-color: rgb(255, 255, 255);
+  border-radius: calc(1dvh + 1dvw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 400ms transform , opacity 400ms;
+}
+.phone-work-logo {
+  position: relative;
+  border-radius: calc(1dvh + 1dvw);
+  background-color: rgb(224, 224, 224);
+  overflow: hidden;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.phone-work-logo img {
+  position: absolute;
+  width: 100%;
+  
+  flex-shrink: 0 !important;
+}
+.phone-work-name {
+  display: flex;
+  align-items: center;
+  
+}
+.phone-work-name h1 {
+  max-height: 100%;
+  overflow-y: scroll;
+  text-align: center;
+  color: #141414;
+}
+.phone-work p {
+  color: #5c5c5c;
+}
+.phone-work-location {
+  
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #747474;
+}
+.phone-work-location span {
+  white-space: nowrap;
+  overflow-x: scroll;
+  max-height: 100%;
+}
+.phone-expereince-inv-wall {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  top: 0;
+  left: 0;
+  z-index: +1;
+  
+}
+.phone-experience {
+  position: relative;
+}
+.inv-wall {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.inv-wall--disable {
+  transform: scale(0);
+}
+.phone-experience-scroll {
+  background-color: red !important;
+}
+.phone-contact {
+  position: relative;
+  width: 100%;
+  background-color: rgb(19, 19, 20);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 400ms;
+}
+.phone-contact-background {
+  filter: invert(1) brightness(1.1);
+  transition: transform 400ms , filter 400ms;
+  animation: rotater 15s infinite linear;
+}
+
+.phone-contact-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  z-index: +1;
+}
+.phone-contact-heading h1 {
+  color: white;
+  font-family: 'Archivo Black';
+}
+.phone-contact--active {
+background-color: rgb(5 , 5 , 5);
+}
+.phone-contact--active .phone-contact-details {
+  opacity: 1;
+  transform: scale(1) translate(0 , 0);
+  overflow-y: scroll;
+}
+.phone-contact--active .phone-contact-background {
+  filter: invert(1) brightness(0.1) !important;
+  transform: scale(0.9) rotate(15deg);
+}
+.phone-contact-body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+
+}
+.phone-experience-disable .phone-experience-heading {
+   transform: scale(0.9) translate(0 , 15%);
+   opacity: 0.3;
+}
+.phone-experience-disable .phone-work {
+  transform: scale(0.5) translate(0 , 5%);
+  opacity: 0;
+}
+
+
+.phone-contact-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0;
+  transform: scale(0.9) translate(0 , 5%);
+
+  transition: transform 400ms ;
+}
+.phone-content-detail {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms color , transform 200ms;
+}
+.phone-content-detail * {
+  color: white;
+}
+.phone-content-detail:active {
+  transform: scale(0.9);
+  
+}
+.phone-content-detail:active * {
+  color: #b9b9b9;
+}
+.phone-content-detail span {
+  white-space: nowrap;
+  overflow-x: scroll;
+  font-family: "Archivo Black";
+}
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: +9999999999999999999999999999999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    </style>
+</head>
+
+<body class="page" id="page" style="height: 581px;">
+    <section class="___layout layout-pc">
+
+    
+        <section class="nav {
+    height: ($t$.___layout_H / 10);
+    width: $t$.___layout_W - ($t$.___layout_H / 10);
+    top: $t$.___layout_H / 20;
+}" style="height: 0px; width: 0px; top: 0px;">
+
+
+            <section class="nav-contents {
+    max-width: $t$.nav_W / 1.5;
+    marginL: $t$.nav_W / 50 !i;
+}" style="max-width: 0px; margin-left: 0px !important;">
+
+                <a href="#pc-about" onclick="enterSectionName(this , true)" id="indicator-about-me" class="nav-contents__section  {
+    width: ($t$.nav_H + $t$.nav_W) / 10;
+    height: $t$.nav-contents_H - ($t$.nav-contents_H / 30);
+}" style="width: 0px; height: 0px;">
+                    <i class="fa-solid fa-user {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 8;
+        
+        
+    }" style="font-size: 0px;"></i>
+                    <span class=" {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 15;
+        
+    }" style="font-size: 0px;">About me</span>
+                    <aside class=" {
+        height: $t$.nav-contents_H / 40;
+        width: $t$.nav-contents__section_W;
+    }" style="height: 0px; width: 0px;"></aside>
+                </a>
+                <a onclick="linkScroll()" href="#pc-experience-section-scroll" id="indicator-experience-me" class="nav-contents__section {
+    width: ($t$.nav_H + $t$.nav_W) / 10;
+    height: $t$.nav-contents_H - ($t$.nav-contents_H / 30);
+}" style="width: 0px; height: 0px;">
+                    <i class="fa-solid fa-briefcase {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 8;
+        
+        
+    }" style="font-size: 0px;"></i>
+                    <span class=" {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 15;
+        
+    }" style="font-size: 0px;">Experience</span>
+                    <aside class=" {
+        height: $t$.nav-contents_H / 40;
+        width: $t$.nav-contents__section_W;
+    }" style="height: 0px; width: 0px;"></aside>
+                </a>
+                <a onclick="linkScroll()" href="#pc-contact-section" id="indicator-contact-me" class="nav-contents__section {
+    width: ($t$.nav_H + $t$.nav_W) / 10;
+    height: $t$.nav-contents_H - ($t$.nav-contents_H / 30);
+}" style="width: 0px; height: 0px;">
+                    <i class="fa-solid fa-id-card {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 8;
+        
+        
+    }" style="font-size: 0px;"></i>
+                    <span class=" {
+        fs: (($t$.nav-contents__section_H / 2.1) + $t$.nav-contents__section_W) / 15;
+        
+    }" style="font-size: 0px;">Contact</span>
+                    <aside class=" {
+        height: $t$.nav-contents_H / 40;
+        width: $t$.nav-contents__section_W;
+    }" style="height: 0px; width: 0px;"></aside>
+                </a>
+
+
+                <section id="pc-progress-bar" class="progress-bar {
+    height: $t$.nav-contents_H / 40;
+    bottom: 0;
+}" style="width: 0px; max-width: 100%; background-color: rgb(20, 20, 20); height: 0px; bottom: 0px;"></section>
+            </section>
+        </section>
+        <section class="landing-head {
+            
+        }">
+            <section class="blend {
+            height: $t$.___layout@.nav_H * 2;
+        }" style="height: 0px;"></section>
+            <img src="https://i.postimg.cc/tJCq9GzV/upscalemxahsedia-transformed.jpg" alt="">
+
+            <section class="landing-head-content {
+            height: $t$.landing-head_H - ($t$.___layout@.nav_H * 2);
+            top: $t$.___layout@.nav_H * 2;
+        }" style="top: 0px; height: 0px;">
+                <section class="profile-photo {
+            height: ($t$.landing-head-content_H + $t$.landing-head-content_W) / 10;
+            width: ($t$.landing-head-content_H + $t$.landing-head-content_W) / 10;
+            
+            top: $t$.___layout@.nav_H;
+            border-width: ($t$.landing-head-content_H + $t$.landing-head-content_W) / 100;
+        }" style="height: 0px; width: 0px; top: 0px; border-width: 0px;">
+
+                </section>
+
+                <section class="welcome {
+            height: $t$.landing-head@.profile-photo_H;
+            top: $t$.___layout@.nav_H;
+            border-width: ($t$.landing-head-content_H + $t$.landing-head-content_W) / 50;
+            max-width: $t$.landing-head_W - (($t$.landing-head-content_H + $t$.landing-head-content_W) / 5)
+        }" style="height: 0px; top: 0px; border-width: 0px; max-width: 0px;">
+                    <h1 class=" {
+            fs: ($t$.landing-head_H + $t$.landing-head_W) / 50;
+        }" style="font-size: 0px;">Hi!</h1>
+                    <h2 class=" {
+     fs: ($t$.landing-head_H + $t$.landing-head_W) / 55;
+}" style="font-size: 0px;">I JOHN DOE</h2>
+                    <h3 class=" {
+    fs: ($t$.landing-head_H + $t$.landing-head_W) / 100;
+}" style="font-size: 0px;">A BACKEND DEVELOPER</h3>
+                </section>
+
+            </section>
+
+
+
+
+            <section class="pc-about-id" id="pc-about"></section>
+
+        </section>
+
+        <section id="pc-about-me-contents" class="blend-image   {
+            height: .landing-head_H / 1.2;
+        }" style="height: 0px;">
+            <img src="https://i.postimg.cc/tJCq9GzV/upscalemxahsedia-transformed.jpg" alt="">
+            <section class="pc-experience-id {
+    height: .layout-pc@.nav_H * 2;
+}" id="pc-experience-section-scroll" style="height: 0px;"></section>
+
+
+
+
+            <section class="about-me-card {
+                height: $t$.blend-image_H / 1.1;
+                width: $t$.blend-image_W / 1.1;
+            }" style="height: 0px; width: 0px;">
+                <h1 class="about-me-card__heading {
+                    fs: ($t$.about-me-card_H + $t$.about-me-card_W) / 45;
+                    height: $t$.about-me-card_H / 8;
+                    width: $t$.about-me-card_W / 1.030;
+                }" style="font-size: 0px; height: 0px; width: 0px;">About me</h1>
+                <section class="about-me-card__row {
+                    width: $t$.about-me-card_W / 1.020;
+                    height: $t$.about-me-card_H - ($t$.about-me-card@.about-me-card__heading_H + (($t$.about-me-card_W - ($t$.about-me-card_W / 1.020)) / 2));
+                }" style="width: 0px; height: 0px;">
+
+                    <main class="about-me-card__detail {
+                        width: $t$.about-me-card__row_W / 2.1;
+                        height: $t$.about-me-card__row_H;
+                    }" style="width: 0px; height: 0px;">
+                        <h1 class="about-me-card__detail__heading {
+                            height: $t$.about-me-card__detail_H / 10;
+                            
+                        }" style="height: 0px;">
+                            <span class=" {
+                                 fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 60;
+                            }" style="font-size: 0px;">
+                                Personal details
+                            </span>
+                        </h1>
+
+                        <ul class=" {
+                            height: ($t$.about-me-card__detail_H - ($t$.about-me-card__detail@.about-me-card__detail__heading_H + 2)) / 1.010;
+                        }" style="height: 366.337px;">
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Name: John</li>
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Full Name: John Doe</li>
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Country: [Country]</li>
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Age: [Age]</li>
+                        </ul>
+                    </main>
+                    <main class="about-me-card__detail {
+                        width: $t$.about-me-card__row_W / 2.1;
+                        height: $t$.about-me-card__row_H;
+                    }" style="width: 0px; height: 0px;">
+                        <h1 class="about-me-card__detail__heading {
+                            height: $t$.about-me-card__detail_H / 10;
+                            
+                        }" style="height: 0px;">
+                            <span class=" {
+                                 fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 60;
+                            }" style="font-size: 0px;">
+                                Educational details
+                            </span>
+                        </h1>
+
+                        <ul class=" {
+                            height: ($t$.about-me-card__detail_H - ($t$.about-me-card__detail@.about-me-card__detail__heading_H + 2)) / 1.010;
+                        }" style="height: 366.337px;">
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Graduate: [Yes/No] </li>
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Degree: [Degree]</li>
+                            
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Profession: Software Engineer</li>
+                            <li class=" {
+                                max-height: $t$.about-me-card__detail@ul_H / 10;
+                                marginL: $t$.about-me-card__detail@ul_W / 20 !i;
+                                marginT: $t$.about-me-card__detail@ul_W / 50 !i;
+                                fs: ($t$.about-me-card__detail_H + $t$.about-me-card__detail_W) / 65;
+                        }" style="max-height: 0px; margin-left: 0px !important; margin-top: 0px !important; font-size: 0px;">Skill Set: C#, .Net Core, React, Postgres</li>
+                            
+                        </ul>
+                    </main>
+                </section>
+            </section>
+        </section>
+
+        <section id="pc-experience-section" class="experience-section experience-section--normal {
+            height: .layout-pc@.landing-head_H;
+        }" style="height: 0px;">
+
+            <section class="experience-heading {
+        height: $t$.experience-section_H / 5;
+        width: $t$.experience-section_W;
+    }" style="height: 0px; width: 0px;">
+                <h1 class=" {
+            
+            fs: ($t$.experience-heading_H + $t$.experience-heading_W) / 40;
+        }" style="font-size: 0px;">
+                    Experience
+                </h1>
+                <h2 class=" {
+             
+            fs: ($t$.experience-heading_H + $t$.experience-heading_W) / 80;  
+        }" style="font-size: 0px;">Worked at</h2>
+            </section>
+
+            <main class="row {
+    height: ($t$.experience-section_H - $t$.experience-section@.experience-heading_H) / 1.1;
+    width: $t$.experience-section_W / 1.5;
+}" style="height: 0px; width: 0px;">
+                <section class="worked-card {
+            height: $t$.row_H / 1.2;
+            width: $t$.row_W / 2.1;
+            marginB: ($t$.row_W - (($t$.row_W / 2.1) * 2)) !i;
+            
+        }" style="height: 0px; width: 0px; margin-bottom: 0px !important;">
+                    <section class="worked_card__image {
+            height: $t$.worked-card_H / 3;
+            width: $t$.worked-card_W / 1.050;
+            marginT: ($t$.worked-card_W - ($t$.worked-card_W / 1.050)) / 2 !i;
+        }" style="height: 0px; width: 0px; margin-top: 0px !important;">
+                        <img src="https://external-preview.redd.it/my-take-on-wayne-enterprises-v0-2zlPyxo0HO0u94oyIelXbka_DHOZBVUOk4NkgChcB7k.jpg?width=1080&crop=smart&auto=webp&s=0398b10ee661f3541212c10d064cd2df5e00395d" alt="" srcset="">
+                    </section>
+
+                    <a onclick="alert(`You were supposed to be redirected to this company's official website, but since it is a fictional company used for demonstration purposes, no redirection will occur.`)" class="worked_card__name {
+            max-width: $t$.worked-card_W / 1.050;
+            height: $t$.worked-card_H / 10;
+            fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 20; 
+        }" style="max-width: 0px; height: 0px; font-size: 0px; cursor: pointer;">
+                        <span>
+                            Wayne Enterprises
+                        </span>
+                    </a>
+                    <p class=" {
+            width: $t$.worked-card_W / 1.1;
+            max-height: ($t$.worked-card_H - ($t$.worked-card@.worked_card__image_H + $t$.worked-card@.worked_card__name_H)) / 1.5;
+            fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 35;
+        }" style="width: 0px; max-height: 0px; font-size: 0px;">
+
+
+                        ● Worked for 5 years <br>
+                        ● Worked as a backend dev <br>
+
+                        <br>
+                        All names, logos, addresses,  and content shown on this page are fictional and for demonstration purposes only.
+                    </p>
+
+                    <a onclick="alert('You were supposed to be redirected to this companys location on Google Maps, but since this is a fictional company used for demonstration purposes, no redirect will occur.')" class="worked-card__location {
+        width: $t$.worked-card_W / 1.2;
+        height:  (($t$.worked-card_H / 10) + $t$.worked-card_W) / 17.5;
+        bottom: ($t$.worked-card_W - ($t$.worked-card_W / 1.050));
+        fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 35;
+    }" style="width: 0px; height: 0px; bottom: 0px; font-size: 0px; cursor: pointer;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class=" {
+            width: $t$.worked-card__location_W - ($t$.worked-card__location@i_W * 1.1);
+        }" style="width: 0px; ">123 Business Ave, Suite 100</span>
+                    </a>
+
+
+                </section>
+
+                <section class="worked-card {
+            height: $t$.row_H / 1.2;
+            width: $t$.row_W / 2.1;
+            marginB: ($t$.row_W - (($t$.row_W / 2.1) * 2)) !i;
+            
+        }" style="height: 0px; width: 0px; margin-bottom: 0px !important;">
+                    <section class="worked_card__image {
+            height: $t$.worked-card_H / 3;
+            width: $t$.worked-card_W / 1.050;
+            marginT: ($t$.worked-card_W - ($t$.worked-card_W / 1.050)) / 2 !i;
+        }" style="height: 0px; width: 0px; margin-top: 0px !important;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrglpk0towXyMAirgc60RGpTaAyv97DJ2tTy-4kvsm_mG7TC4kA2FiwLnb&s=10" alt="" srcset="">
+                    </section>
+
+                    <a onclick="alert(`You were supposed to be redirected to this company's official website, but since it is a fictional company used for demonstration purposes, no redirection will occur.`)" class="worked_card__name {
+            max-width: $t$.worked-card_W / 1.050;
+            height: $t$.worked-card_H / 10;
+            fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 20; 
+        }" style="max-width: 0px; height: 0px; font-size: 0px; cursor: pointer;">
+                        <span>
+                            Initech 
+                        </span>
+                    </a>
+                    <p class=" {
+            width: $t$.worked-card_W / 1.1;
+            max-height: ($t$.worked-card_H - ($t$.worked-card@.worked_card__image_H + $t$.worked-card@.worked_card__name_H)) / 1.5;
+            fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 35;
+        }" style="width: 0px; max-height: 0px; font-size: 0px;">
+
+
+                        ● Worked for 2 years <br>
+                        ● Worked as a Frontend developer <br>
+<br>
+                        All names, logos, addresses,  and content shown on this page are fictional and for demonstration purposes only.
+                    </p>
+
+                    <a  onclick="alert(`You were supposed to be redirected to this company's location on Google Maps, but since this is a fictional company used for demonstration purposes, no redirect will occur.`)" class="worked-card__location {
+        width: $t$.worked-card_W / 1.2;
+        height:  (($t$.worked-card_H / 10) + $t$.worked-card_W) / 17.5;
+        bottom: ($t$.worked-card_W - ($t$.worked-card_W / 1.050));
+        fs: (($t$.worked-card_H / 10) + $t$.worked-card_W) / 35;
+    }" style="width: 0px; height: 0px; bottom: 0px; font-size: 0px; cursor: pointer;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class=" {
+            width: $t$.worked-card__location_W - ($t$.worked-card__location@i_W * 1.1);
+        }" style="width: 0px;">123 Business Ave, Suite 100</span>
+                    </a>
+
+
+                </section>
+
+
+
+
+
+
+            </main>
+
+        </section>
+        <section id="pc-contact-section" class="contact-section {
+            
+            height: .layout-pc@.landing-head_H / 1.5;
+            paddingB: .layout-pc@.nav_H !i;
+        }" style="height: 0px; padding-bottom: 0px !important;">
+
+            <section class="row {
+            
+            width: $t$.contact-section_W / 1.1;
+            height: $t$.contact-section_H;
+        }" style="width: 0px; height: 0px;">
+                <img class="background {
+                    width: $t$.row_W - ($t$.row_W / 1.6);
+                    height: $t$.row_W - ($t$.row_W / 1.6);
+                    
+                }" src="https://64.media.tumblr.com/f41da4c55ed2ea7c34d7cff385633323/tumblr_nhwn155bhf1u16n75o1_500.gif" alt="" style="width: 0px; height: 0px;">
+
+                <section class="contact-section__details {
+                    max-height: $t$.row@.background_H / 1.6;
+                    width: $t$.row_W / 1.6;
+                }" style="max-height: 0px; width: 0px;">
+                    <section class="contact-section__details__heading {
+    height: $t$.row@.background_H / 5;
+}" style="height: 0px;">
+                        <h1 class=" {
+        fs: ($t$.contact-section__details__heading_H + $t$.contact-section__details__heading_W) / 20;
+    }" style="font-size: 0px;">Contact me</h1>
+                    </section>
+
+                    <aside class="contact-details-container {
+    max-height: ($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H;
+
+}" style="max-height: 0px;">
+
+                        <button title="copy text" onclick="copyDetail(this)" class="contact-details__detail {
+    height: (($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) / 4;
+    max-width: $t$.contact-details-container_W;
+    marginR: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 40 !i;
+}" style="height: 0px; max-width: 0px; margin-right: 0px !important;">
+                            <i class="fa-solid fa-envelope {
+            fs: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 40;
+        }" style="font-size: 0px;"></i>
+
+                            <span class=" _text {
+        fs: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 50;
+        max-width: ($t$.contact-details-container_W - $t$.contact-details__detail@i_W) - (((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 25);
+        marginL: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 100 !i;
+    }" style="font-size: 0px; max-width: 0px; margin-left: 0px !important;">
+                                john.doe@example.com
+                            </span>
+                        </button>
+                        <button title="copy text" onclick="copyDetail(this)" class="contact-details__detail {
+    height: (($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) / 4;
+    max-width: $t$.contact-details-container_W;
+    marginR: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 40 !i;
+}" style="height: 0px; max-width: 0px; margin-right: 0px !important;">
+                            <i class="fa-solid fa-phone {
+            fs: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 40;
+        }" style="font-size: 0px;"></i>
+
+                            <span class=" _text {
+        fs: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 50;
+        max-width: ($t$.contact-details-container_W - $t$.contact-details__detail@i_W) - (((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 25);
+        marginL: ((($t$.row@.background_H / 1.6) - $t$.contact-section__details@.contact-section__details__heading_H) + $t$.contact-details-container_W) / 100 !i;
+    }" style="font-size: 0px; max-width: 0px; margin-left: 0px !important;">
+                                +91 00000 00000
+                            </span>
+                        </button>
+
+
+
+
+                    </aside>
+
+
+                </section>
+
+            </section>
+        </section>
+
+
+    </section>
+    <section class="___layout layout-phone" scroll="true">
+        <section class="phone-nav {
+        height: .layout-phone_H / 10;
+        width: .layout-phone_W / 1.1;
+        top: (.layout-phone_W - (.layout-phone_W / 1.1)) / 2;
+    }" style="height: 58.1px; width: 258.182px; top: 12.9091px;">
+            <section class="phone-nav-contents {
+    }">
+                <section id="phone-progress-bar" class="phone-progress-bar"></section>
+                <a onclick="phoneNavContent()" href="#phone-scroller-about-me" id="phone-about-me-nav" class="phone-nav-contents__content {
+        width: $t$.phone-nav_W / 3.5;
+        height: $t$.phone-nav_H;
+    }" style="width: 74.8571px; height: 62px;">
+
+                    <main class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 7;
+    }" style="max-width: 75px; font-size: 19.5714px; height: 29px;">
+                        <i class="fa-solid fa-user"></i>
+                    </main>
+                    <h1 class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 13;
+    }" style="max-width: 75px; font-size: 10.5385px; height: 29px;">
+                        <span>
+                            About me
+                        </span>
+                    </h1>
+                    <aside class=""></aside>
+                </a>
+                <a onclick="phoneNavContent()" href="#phone-scroller-experience" id="phone-experience-nav" class="phone-nav-contents__content {
+        width: $t$.phone-nav_W / 4;
+        height: $t$.phone-nav_H;
+    }" style="width: 65.5px; height: 62px;">
+
+                    <main class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 7;
+    }" style="max-width: 66px; font-size: 18.2857px; height: 29px;">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </main>
+                    <h1 class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 13;
+    }" style="max-width: 66px; font-size: 9.84615px; height: 29px;">
+                        <span>
+                            Experience
+                        </span>
+                    </h1>
+                    <aside class=""></aside>
+                </a>
+                <a onclick="phoneNavContent()" href="#phone-contact" id="phone-contact-nav" class="phone-nav-contents__content {
+        width: $t$.phone-nav_W / 4;
+        height: $t$.phone-nav_H;
+    }" style="width: 65.5px; height: 62px;">
+
+                    <main class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 7;
+    }" style="max-width: 66px; font-size: 18.2857px; height: 29px;">
+                        <i class="fa-solid fa-id-card"></i>
+                    </main>
+                    <h1 class=" {
+        height: ($t$.phone-nav-contents__content_H / 2) - 2;
+        max-width: $t$.phone-nav-contents__content_W;
+        fs: ($t$.phone-nav-contents__content_H + $t$.phone-nav-contents__content_W) / 13;
+    }" style="max-width: 66px; font-size: 9.84615px; height: 29px;">
+                        <span>
+                            Contact
+                        </span>
+                    </h1>
+                    <aside class=""></aside>
+                </a>
+
+            </section>
+        </section>
+        <section id="phone-landing-head" class="phone-landing-head {
+        height: .layout-phone_H;
+    }" style="height: 581px;">
+
+            <section class="phone-welcome {
+        height: .phone-landing-head_H - (.phone-nav_H + (.layout-phone_W - .phone-nav_W));
+
+    }" style="height: 497px;">
+                <section class="phone-profile {
+        height: (.phone-welcome_H + .phone-welcome_W) / 5;
+        width: (.phone-welcome_H + .phone-welcome_W) / 5;
+        border-width: (.phone-welcome_H + .phone-welcome_W) / 50;
+    }" style="height: 156.2px; width: 156.2px; border-width: 15.62px;">
+
+                </section>
+
+                <h1 class=" {
+            marginT: (.phone-welcome_H + .phone-welcome_W) / 60 !i;
+            marginB: (.phone-welcome_H + .phone-welcome_W) / 240 !i;
+            fs: (.phone-welcome_H + .phone-welcome_W) / 30;
+        }" style="margin-top: 13.0167px !important; margin-bottom: 3.25417px !important; font-size: 26.0333px;">HI!</h1>
+                <h2 class=" {
+            fs: (.phone-welcome_H + .phone-welcome_W) / 40;
+            marginB: (.phone-welcome_H + .phone-welcome_W) / 240 !i;
+        }" style="font-size: 19.525px; margin-bottom: 3.25417px !important;">I AM JOHN DOE </h2>
+                <h3 class=" {
+            fs: (.phone-welcome_H + .phone-welcome_W) / 60;
+        }" style="font-size: 13.0167px;">A BACKEND DEVELOPER</h3>
+            </section>
+
+        </section>
+        <section id="phone-about-me" class="phone-blend-image {
+        width: .layout-phone_W;
+        height: .layout-phone_H;
+    }" style="width: 284px; height: 581px;">
+    <section class="phone-scroller-section {
+        bottom: $t$.phone-blend-image_H * 1.090;
+    }" id="phone-scroller-about-me" style="bottom: 633.29px;">
+
+    </section>
+<!-- phone-about-me-card-normal  -->
+            <section class="phone-about-me-card phone-about-me-card-normal {
+                height: ((.phone-blend-image_H - .phone-nav_H)) / 1.060;
+        width: $t$.phone-blend-image_W - ($t$.phone-blend-image_H - ($t$.phone-blend-image_H / 1.030));
+        top: .phone-nav_H / 1.980;
+            }" style="height: 489.623px; width: 267.078px; top: 31.3131px;">
+
+            <section class="phone-about-me__heading {
+                height: $t$.phone-about-me-card_H / 10;
+                width: $t$.phone-about-me-card_W / 1.150;
+                marginT: ($t$.phone-about-me-card_W - ($t$.phone-about-me-card_W / 1.1)) / 2 !i;
+            }" style="height: 49.2px; width: 233.913px; margin-top: 12.2273px !important;">
+                <h1 class=" {
+                    fs: (.phone-about-me__heading_H + .phone-about-me__heading_W) / 11;
+                    height: .phone-about-me__heading_H / 10;
+                }" style="font-size: 25.7273px; height: 4.9px;">About me</h1>
+            </section>
+
+            <section class="phone-about-me__detail {
+                max-height: .phone-about-me-card_H / 2;
+            }" style="max-height: 246px;">
+                    <aside class=" {
+                        height: .phone-about-me-card_H / 15;
+                        marginT: .phone-about-me-card_H / 100 !i;
+                        width: $t$.phone-about-me-card_W / 1.150;
+                        
+                    }" style="height: 32.8px; margin-top: 4.92px !important; width: 233.913px;">
+                    
+                    <span class=" {
+                      height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 50;
+                      width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 50;
+                      marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 70 !i;
+                      
+                    }" style="height: 6.364px; width: 6.364px; margin-right: 4.54571px !important;"></span> 
+                    <h3 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 22;
+                    }" style="font-size: 14.4636px;">Personal details</h3>
+                    </aside>
+                
+                      <section class="phone-about-me__detail__details {
+                    max-height: (.phone-about-me-card_H / 2) - .phone-about-me-card_H / 10;
+                    width: .phone-about-me-card_W / 1.150;
+                }" style="max-height: 196.8px; width: 233.913px;">
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;">Name: John</h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;">Full Name: John Doe</h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;">Country: [Country] </h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;">Age: [Age] </h1>
+                </section>
+             
+               
+
+                </section>
+            </section>
+          
+            <section class="phone-about-me__detail {
+                height: $t$.phone-about-me-card_H -($t$.phone-about-me-card@.phone-about-me__detail_H + $t$.phone-about-me-card@.phone-about-me__heading_H);
+            }" style="height: 335px;">
+                    <aside class=" {
+                        height: .phone-about-me-card_H / 15;
+                        marginT: .phone-about-me-card_H / 100 !i;
+                        width: $t$.phone-about-me-card_W / 1.150;
+                        
+                    }" style="height: 32.8px; margin-top: 4.92px !important; width: 233.913px;">
+                    
+                    <span class=" {
+                      height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 50;
+                      width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 50;
+                      marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 70 !i;
+                      
+                    }" style="height: 6.364px; width: 6.364px; margin-right: 4.54571px !important;"></span> 
+                    <h3 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 22;
+                    }" style="font-size: 14.4636px;">Educational details</h3>
+                    </aside>
+                
+                      <section class="phone-about-me__detail__details {
+                    height: $t$.phone-about-me__detail_H - ($t$.phone-about-me__detail@aside_H * 2);
+                    width: .phone-about-me-card_W / 1.150;
+                }" style="height: 269px; width: 233.913px;">
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;">Graduate: [Yes/No]</h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;"> Degree: [Degree]</h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;"> Profession: Software Engineer </h1>
+                </section>
+                <section class="phone-about-me__detail__details__detail {
+                    max-width: $t$.phone-about-me__detail__details_W;
+                    marginB: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 90 !i;
+                }" style="max-width: 234px; margin-bottom: 3.53556px !important;">
+                    <span class=" {
+                        height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 75;
+                        border-width: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 250;
+                        marginR: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 60 !i;
+                    }" style="height: 4.24267px; width: 4.24267px; border-width: 1.2728px; margin-right: 5.30333px !important;"></span> <h1 class=" {
+                        fs: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        min-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 30;
+                        max-height: ((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 15;
+                        max-width: ($t$.phone-about-me__detail__details_W) - (((.phone-about-me-card_H / 10) + (.phone-about-me-card_W) / 30) + (((.phone-about-me-card_H / 10) + .phone-about-me-card_W) / 1501));
+                    }" style="font-size: 10.6067px; min-height: 10.6067px; max-height: 21.2133px; max-width: 175.621px;"> Skill Set:  C#, .Net Core, React, Postgres</h1>
+                </section>
+            
+               
+
+                </section>
+            </section>
+          
+              
+
+            </section>
+
+        </section>
+
+        <section id="phone-experience" class="phone-experience phone-experience-disable {
+            height: .phone-landing-head_H;
+
+        }" style="height: 581px;">
+        <section class="phone-scroller-section phone-experience-scroll {
+        bottom: $t$.phone-experience_H * 0.129;
+        height: .phone-experience_H;
+    }" id="phone-scroller-experience" style="bottom: 74.949px; height: 581px;">
+        </section>
+
+        <section class="phone-expereince-inv-wall inv-wall">
+
+        </section>
+        <section class="phone-experience-heading {
+            height: .phone-experience_H / 8;
+            
+        }" style="height: 72.625px;">
+            <h1 class=" {
+                fs: ($t$.phone-experience-heading_H + $t$.phone-experience-heading_W) / 15;
+            }" style="font-size: 21.9333px;">Experience</h1>
+            <h2 class=" {
+                fs: ($t$.phone-experience-heading_H + $t$.phone-experience-heading_W) / 23;
+            }" style="font-size: 14.3043px;">Worked at</h2>
+        </section>
+
+        <section class="phone-experience-works {
+            height: $t$.phone-experience_H - $t$.phone-experience@.phone-experience-heading_H;
+        }" style="height: 508px;">
+        <section class="phone-work {
+            
+            max-height: $t$.phone-experience-works_H / 1.2;
+            width: $t$.phone-experience-works_W / 1.1;
+            marginB: .phone-experience-works_H / 25 !i;
+        }" style="max-height: 423.333px; width: 258.182px; margin-bottom: 20.32px !important;">
+        <a onclick="alert(`You were supposed to be redirected to this company's official website, but since it is a fictional company used for demonstration purposes, no redirection will occur.`)" class="phone-work-website">
+
+        
+        <section class="phone-work-logo {
+            height: $t$.phone-experience-works_H / 5;
+            width: $t$.phone-work_W / 1.1;
+            marginT:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+        }" style="height: 101.6px; width: 234.545px; margin-top: 11.7273px !important;">
+        <img src="https://external-preview.redd.it/my-take-on-wayne-enterprises-v0-2zlPyxo0HO0u94oyIelXbka_DHOZBVUOk4NkgChcB7k.jpg?width=1080&crop=smart&auto=webp&s=0398b10ee661f3541212c10d064cd2df5e00395d" alt="" srcset="">
+        </section>
+        <section class="phone-work-name {
+            height: ($t$.phone-experience-works_H / 1.2) / 12;
+            width: $t$.phone-work_W / 1.1;
+        }" style="height: 35.2778px; width: 234.545px;">
+            <h1 class=" {
+                width: $t$.phone-work-name_W;
+                fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 55;
+            }" style="width: 235px; font-size: 14.4px;">Wayne Enterprises</h1>
+        </section>
+    </a>
+<p class=" {
+    max-height: (($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + (($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) * 3) + $t$.phone-work@.phone-work-name_H)) / 1.1;
+    width: $t$.phone-work_W / 1.1;
+    fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 70;
+}" style="max-height: 196.336px; width: 234.545px; font-size: 11.3143px;">
+
+                        ● Worked for 5 years <br>
+● Worked as a backend dev <br>
+<br>
+
+All names, logos, addresses, and content shown on this page are fictional and for demonstration purposes only.
+
+</p>
+<a onclick="alert(`You were supposed to be redirected to this company's location on Google Maps, but since this is a fictional company used for demonstration purposes, no redirect will occur.`)" class=" phone-work-location {
+    height: ($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) + $t$.phone-work@.phone-work-name_H) - ((($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) + $t$.phone-work@.phone-work-name_H)) / 1.1);
+    max-width: $t$.phone-work_W / 1.1;
+    marginB:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+    marginT:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+    fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 80;
+}" style="height: 23.8981px; max-width: 234.545px; margin-bottom: 11.7273px !important; margin-top: 11.7273px !important; font-size: 9.9px;"><i class="fa-solid fa-location-dot"></i> <span class=" {
+    width: ($t$.phone-work_W / 1.1)- $t$.phone-work-location@i_W;
+}" style="width: 222.545px;">
+    
+123 Business Ave, Suite 100
+</span></a>
+
+        </section>
+        <section class="phone-work {
+            
+            max-height: $t$.phone-experience-works_H / 1.2;
+            width: $t$.phone-experience-works_W / 1.1;
+            marginB: .phone-experience-works_H / 25 !i;
+        }" style="max-height: 423.333px; width: 258.182px; margin-bottom: 20.32px !important;">
+        <a onclick="alert(`You were supposed to be redirected to this company's official website, but since it is a fictional company used for demonstration purposes, no redirection will occur.`)" class="phone-work-website">
+
+        
+        <section class="phone-work-logo {
+            height: $t$.phone-experience-works_H / 5;
+            width: $t$.phone-work_W / 1.1;
+            marginT:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+        }" style="height: 101.6px; width: 234.545px; margin-top: 11.7273px !important;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrglpk0towXyMAirgc60RGpTaAyv97DJ2tTy-4kvsm_mG7TC4kA2FiwLnb&s=10" alt="" srcset="">
+        </section>
+        <section class="phone-work-name {
+            height: ($t$.phone-experience-works_H / 1.2) / 12;
+            width: $t$.phone-work_W / 1.1;
+        }" style="height: 35.2778px; width: 234.545px;">
+            <h1 class=" {
+                width: $t$.phone-work-name_W;
+                fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 55;
+            }" style="width: 235px; font-size: 14.4px;">Initech</h1>
+        </section>
+    </a>
+<p class=" {
+    max-height: (($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + (($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) * 3) + $t$.phone-work@.phone-work-name_H)) / 1.1;
+    width: $t$.phone-work_W / 1.1;
+    fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 70;
+}" style="max-height: 196.336px; width: 234.545px; font-size: 11.3143px;">
+
+                       ● Worked for 2 years <br>
+● Worked as a Frontend developer <br>
+<br>
+All names, logos, addresses, and content shown on this page are fictional and for demonstration purposes only.
+
+</p>
+<a onclick="alert(`You were supposed to be redirected to this company's location on Google Maps, but since this is a fictional company used for demonstration purposes, no redirect will occur.`)" class=" phone-work-location {
+    height: ($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) + $t$.phone-work@.phone-work-name_H) - ((($t$.phone-experience-works_H / 1.2) - ($t$.phone-work@.phone-work-logo_H + ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) + $t$.phone-work@.phone-work-name_H)) / 1.1);
+    max-width: $t$.phone-work_W / 1.1;
+    marginB:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+    marginT:  ($t$.phone-work_W - ( $t$.phone-work_W / 1.1)) / 2 !i;
+    fs: ($t$.phone-experience-works_H + $t$.phone-experience-works_W) / 80;
+}" style="height: 23.8981px; max-width: 234.545px; margin-bottom: 11.7273px !important; margin-top: 11.7273px !important; font-size: 9.9px;"><i class="fa-solid fa-location-dot"></i> <span class=" {
+    width: ($t$.phone-work_W / 1.1)- $t$.phone-work-location@i_W;
+}" style="width: 222.545px;">
+    
+123 Business Ave, Suite 100
+</span></a>
+
+        </section>
+        </section>
+
+        </section>
+        <!-- phone-contact--active -->
+        <section id="phone-contact" class="phone-contact {
+            height: .phone-landing-head_H / 1.1;
+        }" style="height: 528.182px;">
+        
+        <img class="phone-contact-background {
+            max-height: .phone-contact_H / 1.5;
+        }" src="https://i.postimg.cc/s2n5msPB/image-removebg-preview.png" alt="" srcset="" style="max-height: 352px;">
+        <section class="phone-contact-body {
+            height: .phone-contact_H / 1.5;
+        }" style="height: 352px;">
+        <section class="phone-contact-heading {
+            height: .phone-contact-body_H / 8;
+            width: .phone-contact-body_W / 1.1;
+        }" style="height: 44px; width: 258.182px;">
+            <h1 class=" {
+                fs: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 25;
+            }" style="font-size: 25.44px;">Contact me</h1>
+        </section>
+        <section class="phone-contact-details {
+            height: $t$.phone-contact-body_H - $t$.phone-contact-body@.phone-contact-heading_H;
+            width: $t$.phone-contact-body_W / 1.1;
+        }" style="height: 308px; width: 258.182px;">
+        <button onclick="copyDetail(this)" class="phone-content-detail {
+            height: $t$.phone-contact-details_H / 4;
+            
+        }" style="height: 77px;">
+            <i class="fa-solid fa-envelope {
+                fs: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 25;
+                marginR: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 80 !i;
+            }" style="font-size: 25.44px; margin-right: 7.95px !important;"></i>
+            <span class=" _text {
+                fs: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 40;
+                width: $t$.phone-content-detail_W - ($t$.phone-content-detail@i_W + (($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 80));
+            }" style="font-size: 15.9px; width: 218.05px;">john.doe@example.com</span>
+        </button>
+        <button onclick="copyDetail(this)" class="phone-content-detail {
+            height: $t$.phone-contact-details_H / 4;
+            
+        }" style="height: 77px;">
+            <i class="fa-solid fa-phone {
+                fs: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 25;
+                marginR: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 80 !i;
+            }" style="font-size: 25.44px; margin-right: 7.95px !important;"></i>
+            <span class=" _text {
+                fs: ($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 40;
+                max-width: $t$.phone-content-detail_W - ($t$.phone-content-detail@i_W + (($t$.phone-contact-body_H + $t$.phone-contact-body_W) / 80));
+            }" style="font-size: 15.9px; max-width: 218.05px;">+91 00000 00000</span>
+        </button>
+
+        </section>
+
+
+
+        </section>
+        </section>
+    </section>
+
+
+<script>
+    function isUserTypingNow() {
+  const el = document.activeElement;
+  return (
+    el &&
+    (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') &&
+    !el.readOnly &&
+    !el.disabled
+  );
+}
+
+function getCurrentDeviceType() {
+  const width = window.innerWidth;
+  if (width <= 480) return "phone";
+  if (width <= 768) return "tab";
+  if (width <= 1024) return "lap";
+  if (width <= 1440) return "pc";
+  return "tv";
+}
+
+function hostAndConnect() {
+  let hosts = document.querySelectorAll("input[host]");
+  let connects = document.querySelectorAll("input[connect]");
+  hosts.forEach(h => {
+    connects.forEach(con => {
+      let connectAttribute = con.getAttribute("connect");
+      let hostAttribute = h.getAttribute("host");
+      if (connectAttribute === hostAttribute) {
+        h.addEventListener("input", () => {
+          if (con.value !== h.value) {
+            con.value = h.value;
+            con.dispatchEvent(new Event("input", { bubbles: true }));
+          }
+        });
+        con.addEventListener("input", () => {
+          if (h.value !== con.value) {
+            h.value = con.value;
+            h.dispatchEvent(new Event("input", { bubbles: true }));
+          }
+        });
+      }
+    });
+  });
+}
+
+function handleMoveTags() {
+  document.querySelectorAll("move[ele]").forEach(moveTag => {
+    const selector = moveTag.getAttribute("ele");
+    if (!selector) return;
+
+    let original;
+    if (selector.includes("@")) {
+      const parts = selector.split("@");
+      let base = document.querySelector(parts[0]);
+      for (let i = 1; i < parts.length && base; i++) {
+        base = base.querySelector(parts[i]);
+      }
+      original = base;
+    } else {
+      original = document.querySelector(selector);
+    }
+
+    if (!original) return;
+
+    const moveAttributes = [...moveTag.attributes].filter(attr => attr.name !== "ele");
+    let existing = moveTag.querySelector(original.tagName);
+    const isInput = original.tagName === "INPUT" || original.tagName === "TEXTAREA";
+
+    const shouldReplace =
+      !existing ||
+      moveAttributes.some(attr => existing.getAttribute(attr.name) !== attr.value) ||
+      (isInput && existing.value !== original.value);
+
+    if (!shouldReplace) return;
+    if (existing) existing.remove();
+
+    const clone = original.cloneNode(true);
+    moveAttributes.forEach(attr => clone.setAttribute(attr.name, attr.value));
+    if (isInput) clone.value = original.value;
+
+    moveTag.appendChild(clone);
+  });
+}
+
+function moveElementsIntoActiveIf() {
+  const currentDevice = getCurrentDeviceType();
+  const matchingIfBlocks = [...document.querySelectorAll("if-block")].filter(el => {
+    const devices = el.getAttribute("device")?.split("||").map(d => d.trim());
+    return devices?.includes(currentDevice);
+  });
+
+  for (const activeIf of matchingIfBlocks) {
+    const selector = activeIf.getAttribute("move");
+    if (!selector) continue;
+
+    let elementToMove = document.querySelector(selector);
+    if (!elementToMove) {
+      document.querySelectorAll("if-block").forEach(ifEl => {
+        const maybe = ifEl.querySelector(selector);
+        if (maybe) elementToMove = maybe;
+      });
+    }
+
+    if (!elementToMove) continue;
+
+    document.querySelectorAll("if-block").forEach(ifEl => {
+      const existing = ifEl.querySelector(selector);
+      if (existing) existing.remove();
+    });
+
+    if (elementToMove.parentElement) elementToMove.remove();
+    activeIf.appendChild(elementToMove);
+  }
+}
+
+function updateTargetBlockVisibility(root) {
+  const allTargets = (root || document).querySelectorAll("target-block[element][has]");
+  allTargets.forEach(target => {
+    const sel = target.getAttribute("element");
+    const required = target.getAttribute("has");
+    const scope = root || document;
+    const targetEl = scope.querySelector(sel);
+    const hasClass = targetEl?.classList.contains(required.replace(/^\./, ""));
+
+    if (hasClass) {
+      target.setAttribute("data-active", "true");
+    } else {
+      target.removeAttribute("data-active");
+    }
+  });
+}
+
+function applyDynamicStylesToElement(root) {
+  updateTargetBlockVisibility(root);
+
+  const propertyMap = {
+    marginT: "margin-top", marginR: "margin-right",
+    marginB: "margin-bottom", marginL: "margin-left",
+    paddingT: "padding-top", paddingR: "padding-right",
+    paddingB: "padding-bottom", paddingL: "padding-left",
+    fs: "font-size"
+  };
+
+  const currentDevice = getCurrentDeviceType();
+
+  const all = [...(root || document).querySelectorAll("[class*='{']")].filter(el => {
+    const ifb = el.closest("if-block");
+    if (ifb) {
+      const devs = (ifb.getAttribute("device") || "").split("||").map(d => d.trim());
+      if (!devs.includes(currentDevice)) return false;
+    }
+
+    const target = el.closest("target-block[element][has]");
+    if (target) {
+      const sel = target.getAttribute("element");
+      const required = target.getAttribute("has");
+      const scope = root || document;
+      const targetEl = scope.querySelector(sel);
+      const hasClass = targetEl?.classList.contains(required.replace(/^\./, ""));
+      if (hasClass) {
+        target.setAttribute("data-active", "true");
+      } else {
+        target.removeAttribute("data-active");
+        return false;
+      }
+    }
+    return true;
+  });
+
+  all.forEach(el => {
+    const classAttr = el.getAttribute("class");
+    const match = classAttr.match(/\{([^}]+)\}/);
+    if (!match) return;
+
+    const rules = match[1].split(";").map(r => r.trim()).filter(Boolean);
+    rules.forEach(rule => {
+      let [rawProp, expr] = rule.split(":").map(s => s.trim());
+      if (!rawProp || !expr) return;
+
+      const prop = propertyMap[rawProp] || rawProp;
+      let important = false;
+      if (expr.endsWith("!i")) {
+        important = true;
+        expr = expr.slice(0, -3).trim();
+      }
+
+      expr = expr.replace(/\$t\$\.(.+?)_(H|W)/g, (_, chain, dim) => {
+        const parts = chain.split("@");
+        let node = el.closest(parts[0].startsWith(".") ? parts[0] : `.${parts[0]}`);
+        for (let i = 1; i < parts.length && node; i++) {
+          node = node.querySelector(parts[i]);
+        }
+        return node ? (dim === "H" ? node.offsetHeight : node.offsetWidth) : "0";
+      });
+
+      expr = expr.replace(/([.#][\w@-]+(?:@[.#][\w@-]+)*)_(H|W)/g, (fullMatch, sel, dim) => {
+        const parts = sel.split("@");
+        let base = (root || document).querySelector(parts[0]);
+        for (let i = 1; i < parts.length && base; i++) {
+          base = base.querySelector(parts[i]);
+        }
+        if (!base) return "0";
+
+        const ifb = base.closest("if-block");
+        if (ifb) {
+          const devs = (ifb.getAttribute("device") || "").split("||").map(d => d.trim());
+          if (!devs.includes(currentDevice)) return "0";
+        }
+
+        return dim === "H" ? base.offsetHeight : base.offsetWidth;
+      });
+
+      try {
+        const val = Function(`return ${expr}`)();
+        if (!isNaN(val)) {
+          el.style.setProperty(prop, val + "px", important ? "important" : "");
+        }
+      } catch (err) {
+        console.warn(`Failed to evaluate class-style expression: "${expr}"`, err);
+      }
+    });
+  });
+}
+
+function applyDynamicStyles() {
+  applyDynamicStylesToElement(document);
+}
+
+// ✅ Throttled updater using rAF
+let styleUpdateScheduled = false;
+function scheduleApplyDynamicStyles() {
+  if (!styleUpdateScheduled) {
+    styleUpdateScheduled = true;
+    requestAnimationFrame(() => {
+      if (!isUserTypingNow()) {
+        applyDynamicStyles();
+      }
+      styleUpdateScheduled = false;
+    });
+  }
+}
+
+let mutationObserver = null;
+let resizeObserver = null;
+
+function connectLayoutObservers() {
+  if (!mutationObserver) {
+    mutationObserver = new MutationObserver(() => scheduleApplyDynamicStyles());
+    document.querySelectorAll(".___layout").forEach(lay => {
+      mutationObserver.observe(lay, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ["class", "style", "ds", "device", "has", "element"],
+      });
+    });
+  }
+
+  if (!resizeObserver) {
+    resizeObserver = new ResizeObserver(() => scheduleApplyDynamicStyles());
+    resizeObserver.observe(document.body);
+  }
+}
+
+function disconnectLayoutObservers() {
+  if (mutationObserver) {
+    mutationObserver.disconnect();
+    mutationObserver = null;
+  }
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+    resizeObserver = null;
+  }
+}
+
+function setBodyHeight() {
+  document.body.style.height = window.innerHeight + "px";
+}
+
+function init() {
+  setTimeout(() => {
+    setBodyHeight();
+    moveElementsIntoActiveIf();
+    handleMoveTags();
+    hostAndConnect();
+    scheduleApplyDynamicStyles();
+  }, 50);
+}
+
+window.addEventListener("DOMContentLoaded", init);
+window.addEventListener("resize", init);
+
+function observeLayoutChanges() {
+  connectLayoutObservers();
+}
+
+observeLayoutChanges();
+
+/*
+Notes:
+- Dynamic style recalculations are batched with requestAnimationFrame.
+- Avoids layout thrash by caching and throttling.
+- Theme supported: theme="dark" | theme="light".
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+let snapScroll = true;
+
+document.querySelectorAll(".layout-pc .nav-contents__section").forEach(section => {
+  section.addEventListener("mouseenter" , () => {
+    enterSectionName(section)
+  })
+  section.addEventListener("mouseleave" , () => {
+    leaveSectionName(section)
+  })
+})
+function enterSectionName(ele , link = false) {
+  if (link)
+  linkScroll();
+ let text = ele.querySelector("span");
+ let icon = ele.querySelector("i");
+ 
+ 
+ icon.style.transform = `translateY(-${text.clientHeight / 2}px)`;
+ text.style.transform = `translateY(-${text.clientHeight / 2}px) scale(1)`;
+ text.style.opacity = 1;
+ 
+}
+function leaveSectionName(ele) {
+ let text = ele.querySelector("span");
+ let icon = ele.querySelector("i");
+ 
+ 
+ icon.style.transform = `translateY(-${0}px)`;
+ 
+ text.style.transform = `translateY(-${0}px) scale(0.9)`;
+  text.style.opacity = 0;
+}
+
+function getNumberFromCss(value) {
+ let val = Number(value.replace("px" , ""));
+ return val == NaN ? 0 : val;
+}
+function linkScroll() {
+snapScroll = false
+setTimeout(() => {
+snapScroll = true;
+}, 1000)
+}
+// only pc
+let pcLayout = document.querySelector(".layout-pc");
+pcLayout.addEventListener("scroll" , (e) => {
+  let scroll = pcLayout.scrollTop;
+  
+ let nav = document.querySelector(".layout-pc .nav");
+  
+  let landingHead = document.querySelector(".layout-pc .landing-head");
+ let landingHead__profile = landingHead.querySelector(".layout-pc .profile-photo");
+ let landingHeadContents = landingHead.querySelector(".layout-pc .landing-head-content");
+  let progressBar = document.querySelector(".layout-pc #pc-progress-bar");
+  let aboutSection = document.querySelector(".layout-pc #pc-about-me-contents");
+  let sections = {
+    "aboutMe": document.querySelector(".layout-pc #indicator-about-me"),
+    "experience": document.querySelector(".layout-pc #indicator-experience-me"),
+    "contact": document.querySelector(".layout-pc #indicator-contact-me"),
+  }
+let experienceSection = document.querySelector(".layout-pc #pc-experience-section");
+let contactSection = document.querySelector(".layout-pc #pc-contact-section");
+
+
+
+
+if (scroll >= (nav.clientHeight * 2)) {
+  if (!landingHeadContents.className.includes("landing-head-content-inactive"))
+landingHeadContents.className += " landing-head-content-inactive";
+}
+  else {
+    
+  landingHeadContents.className = landingHeadContents.className.replace("landing-head-content-inactive" , "");
+
+  }
+
+if (scroll > (landingHead.clientHeight - landingHead__profile.clientHeight)
+  && scroll < (landingHead.clientHeight + (aboutSection.querySelector(".about-me-card").clientHeight - (nav.clientHeight * 2)))) {
+
+  if (getNumberFromCss(progressBar.style.width) != sections.aboutMe.clientWidth) {
+
+     progressBar.style.width = sections.aboutMe.clientWidth + "px";
+     
+     leaveSectionName(sections.experience)
+     leaveSectionName(sections.contact)
+     leaveSectionName(sections.aboutMe)
+     enterSectionName(sections.aboutMe)
+    let blend = document.querySelector(".layout-pc .blend-image");
+    if (!blend.className.includes("blend-image--active")) { 
+blend.className += " blend-image--active";
+if (snapScroll)
+aggressiveScroll(e.target , (landingHead.clientHeight - landingHead__profile.clientHeight) , 1000)
+    }
+
+    }
+    if (sections.aboutMe.className.includes("_nav-contents__section--active")) {
+      leaveSectionName(sections.aboutMe)
+      sections.aboutMe.className = sections.aboutMe.className.replace("_nav-contents__section--active" , "")
+      enterSectionName(sections.aboutMe)
+      let blend = document.querySelector(".layout-pc .blend-image");
+    if (!blend.className.includes("blend-image--active")) {
+blend.className += " blend-image--active";
+    }
+    blend.className = blend.className.replace("blend-image--normal" , " blend-image-active");
+    }
+    
+   let blend = document.querySelector(".layout-pc .blend-image");
+   if (!blend.className.includes("blend-image-active")) {
+    blend.className += " blend-image-active";
+   }
+blend.className = blend.className.replace("blend-image--normal" , " blend-image-active");
+
+ if (!experienceSection.className.includes("experience-section--normal")) {
+   experienceSection.className += " experience-section--normal";
+   }
+ 
+
+  }
+
+    
+  
+    else if (scroll >= (landingHead.clientHeight + (aboutSection.querySelector(".about-me-card").clientHeight - (nav.clientHeight * 2)))
+      && scroll < (landingHead.clientHeight + (aboutSection.querySelector(".about-me-card").clientHeight - (nav.clientHeight * 2)) + experienceSection.clientHeight)) {
+ if (getNumberFromCss(progressBar.style.width) != (sections.aboutMe.clientWidth * 2)) {
+
+   progressBar.style.width = sections.aboutMe.clientWidth * 2 + "px";
+     leaveSectionName(sections.contact)
+   leaveSectionName(sections.aboutMe)
+   if (!sections.aboutMe.className.includes("_nav-contents__section--active")) {
+    sections.aboutMe.className += " _nav-contents__section--active";
+   }
+    sections.experience.className = sections.experience.className.replace("_nav-contents__section--active" , "")
+    sections.contact.className = sections.contact.className.replace("_nav-contents__section--active" , "")
+leaveSectionName(sections.experience)
+   enterSectionName(sections.experience)
+   if (experienceSection.className.includes("experience-section--normal")) {
+    if (snapScroll)
+    aggressiveScroll(e.target , (landingHead.clientHeight + (aboutSection.querySelector(".about-me-card").clientHeight - (nav.clientHeight * 2))) , 1000)
+   experienceSection.className = experienceSection.className.replace("experience-section--normal" , "");
+   }
+  }
+  }
+  
+  else if (scroll >= (landingHead.clientHeight + (aboutSection.querySelector(".about-me-card").clientHeight - (nav.clientHeight * 2)) + experienceSection.clientHeight)) {
+    
+     if (getNumberFromCss(progressBar.style.width) != (sections.aboutMe.clientWidth * 3)) {
+
+       progressBar.style.width = sections.aboutMe.clientWidth * 3 + "px";
+       leaveSectionName(sections.experience)
+       leaveSectionName(sections.aboutMe)
+       if (!sections.experience.className.includes("_nav-contents__section--active") || !sections.aboutMe.className.includes("_nav-contents__section--active") ) {
+    sections.experience.className += " _nav-contents__section--active";
+    sections.aboutMe.className += " _nav-contents__section--active";
+   }
+    
+    sections.contact.className = sections.contact.className.replace("_nav-contents__section--active" , "")
+leaveSectionName(sections.contact)
+   enterSectionName(sections.contact)
+      }
+     
+    
+}
+
+else if (scroll <= ((landingHead.clientHeight - landingHead__profile.clientHeight) + experienceSection.clientHeight + contactSection.clientHeight)) {
+  
+  progressBar.style.width = "0";
+  leaveSectionName(sections.aboutMe)
+  leaveSectionName(sections.experience)
+  leaveSectionName(sections.contact)
+  sections.contact.className = sections.contact.className.replace("_nav-contents__section--active" , "")
+  sections.experience.className = sections.experience.className.replace("_nav-contents__section--active" , "")
+  sections.aboutMe.className = sections.aboutMe.className.replace("_nav-contents__section--active" , "")
+  let blend = document.querySelector(".layout-pc .blend-image");
+  blend.className = blend.className.replace("blend-image--active" , "blend-image--normal");
+}
+
+
+
+  
+
+
+
+})
+let phoneLayout = document.querySelector(".layout-phone");
+
+phoneLayout.addEventListener("scroll" , (e) => {
+let scroll = phoneLayout.scrollTop;
+let aboutMe = document.getElementById("phone-about-me");
+let experience = document.getElementById("phone-experience");
+let contact = document.getElementById("phone-contact");
+let landingHead = document.getElementById("phone-landing-head");
+let nav = document.querySelector(".phone-nav");
+let sections = {
+  "aboutMe": document.getElementById("phone-about-me-nav"),
+  "experience": document.getElementById("phone-experience-nav"),
+  "contact": document.getElementById("phone-contact-nav"),
+}
+let progressBar = document.getElementById("phone-progress-bar");
+if (scroll > (landingHead.clientHeight - (nav.clientHeight * 3)) &&
+scroll < ((landingHead.clientHeight + aboutMe.clientHeight) - (nav.clientHeight * 6))) {
+  enterPhoneSection(sections.aboutMe );
+  leavePhoneSection(sections.contact)
+  leavePhoneSection(sections.experience)
+  progressBar.style.width = sections.aboutMe.clientWidth + 'px';
+ let aboutMeCard = document.querySelector(".phone-about-me-card");
+ if (!aboutMeCard.className.includes("phone-about-me-card-active")) {
+  aboutMeCard.className += " phone-about-me-card-active";
+  aboutMeCard.className = aboutMeCard.className.replace("phone-about-me-card-normal" , "");
+  
+ }
+ let invWall = document.querySelector(".layout-phone .phone-expereince-inv-wall");
+  if (invWall.className.includes("inv-wall--disable")) {
+
+    invWall.className = invWall.className.replace("inv-wall--disable" , "");
+  }
+   let pe = document.querySelector(".phone-experience")
+ if (!pe.className.includes("phone-experience-disable")) {
+  pe.className += " phone-experience-disable";
+ }
+ let phoneContact = document.querySelector(".phone-contact");
+ if (phoneContact.className.includes("phone-contact--active")) {
+  phoneContact.className = phoneContact.className.replace("phone-contact--active" , "");
+ }
+ 
+ 
+
+}
+else if (scroll > ((landingHead.clientHeight + aboutMe.clientHeight) - (nav.clientHeight * 6)) &&
+scroll < (landingHead.clientHeight + aboutMe.clientHeight + experience.clientHeight - (nav.clientHeight * 2))) {
+  
+  enterPhoneSection(sections.experience);
+  leavePhoneSection(sections.aboutMe)
+  leavePhoneSection(sections.contact)
+  progressBar.style.width = (sections.aboutMe.clientWidth * 2) + 'px';
+  let invWall = document.querySelector(".layout-phone .phone-expereince-inv-wall");
+  if (!invWall.className.includes("inv-wall--disable")) {
+
+    invWall.className += " inv-wall--disable";
+  }
+ let pe = document.querySelector(".phone-experience")
+ if (pe.className.includes("phone-experience-disable")) {
+  pe.className = pe.className.replace("phone-experience-disable" , "")
+  
+ }
+  let phoneContact = document.querySelector(".phone-contact");
+ if (phoneContact.className.includes("phone-contact--active")) {
+  phoneContact.className = phoneContact.className.replace("phone-contact--active" , "");
+ }
+}
+else if (scroll > (landingHead.clientHeight + aboutMe.clientHeight + experience.clientHeight - (nav.clientHeight * 2))) {
+  enterPhoneSection(sections.contact);
+  leavePhoneSection(sections.aboutMe)
+  leavePhoneSection(sections.experience)
+  progressBar.style.width = (sections.aboutMe.clientWidth * 3) + 'px';
+   let phoneContact = document.querySelector(".phone-contact");
+ if (!phoneContact.className.includes("phone-contact--active")) {
+  phoneContact.className += " phone-contact--active";
+ }
+}
+else {
+   leavePhoneSection(sections.contact);
+  leavePhoneSection(sections.aboutMe)
+  leavePhoneSection(sections.experience)
+  progressBar.style.width = 0 + 'px';
+   let aboutMeCard = document.querySelector(".phone-about-me-card");
+ if (!aboutMeCard.className.includes("phone-about-me-card-normal")) {
+  aboutMeCard.className += " phone-about-me-card-normal";
+  aboutMeCard.className = aboutMeCard.className.replace("phone-about-me-card-active" , "");
+ }
+let phoneContact = document.querySelector(".phone-contact");
+ if (phoneContact.className.includes("phone-contact--active")) {
+  phoneContact.className = phoneContact.className.replace("phone-contact--active" , "");
+ }
+  
+}
+
+});
+
+function enterPhoneSection(section , width = false) {
+  if (width) {
+
+    let aside = section.querySelector("aside")
+    aside.className = "phone-nav-contents__content__aside--active";
+  }
+if (!section.className.includes("phone-nav-contents__content--active")) {
+  section.className += " phone-nav-contents__content--active";
+
+}
+}
+function leavePhoneSection(section , width = false) {
+  if (width) {
+
+    let aside = section.querySelector("aside")
+    aside.className = "";
+  }
+section.className = section.className.replace("phone-nav-contents__content--active" , "")
+}
+function copyDetail(ele) {
+  const text = ele.querySelector("._text").innerText;
+
+  if (navigator.clipboard && window.isSecureContext) {
+    // Modern secure context: works in most browsers
+    navigator.clipboard.writeText(text).catch((err) => {
+      console.error("Clipboard API failed", err);
+      fallbackCopy(text);
+    });
+  } else {
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text) {
+  // Create a hidden textarea off-screen to prevent UI disruption
+  const textArea = document.createElement("textarea");
+
+  // Set styles to hide it completely and prevent keyboard pop-up
+  textArea.style.position = "fixed";
+  textArea.style.top = "-9999px";
+  textArea.style.left = "-9999px";
+  textArea.setAttribute("readonly", ""); // Prevent mobile keyboard
+  textArea.value = text;
+
+  document.body.appendChild(textArea);
+  textArea.select();
+
+  try {
+    const successful = document.execCommand("copy");
+    if (!successful) throw new Error("Copy command unsuccessful");
+  } catch (err) {
+    console.error("Fallback copy failed", err);
+    alert("Failed to copy text");
+  }
+
+  document.body.removeChild(textArea);
+}
+
+
+document.querySelectorAll(".layout-phone .phone-nav-contents__content").forEach(content => {
+  content.addEventListener("mouseenter" , () => enterPhoneSection(content))
+  content.addEventListener("mouseleave" , () => leavePhoneSection(content))
+})
+
+function aggressiveScroll(scrollElement, scrollValue, time = 0) {
+    if (time <= 0) {
+        scrollElement.scrollTop = scrollValue;
+        return () => {};
+    }
+
+    const startPos = scrollElement.scrollTop;
+    const distance = scrollValue - startPos;
+    const animDuration = Math.min(400, time);
+    let startTime = null;
+    let rafId = null;
+    let animDone = false;
+
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+
+    // Hard-disable scrolling: nothing can move scrollTop but us
+    const prevOverflow = scrollElement.style.overflow;
+    const prevOverflowY = scrollElement.style.overflowY;
+    scrollElement.style.overflow = "hidden";
+
+    function tick(timestamp) {
+        if (startTime === null) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+
+        if (!animDone) {
+            const t = Math.min(elapsed / animDuration, 1);
+            scrollElement.scrollTop = startPos + distance * ease(t);
+            if (t >= 1) animDone = true;
+        } else {
+            const diff = scrollValue - scrollElement.scrollTop;
+            if (Math.abs(diff) > 0.5) {
+                scrollElement.scrollTop += diff * 0.3;
+            }
+        }
+
+        if (elapsed < time) {
+            rafId = requestAnimationFrame(tick);
+        }
+    }
+    rafId = requestAnimationFrame(tick);
+
+    const timeoutId = setTimeout(unlock, time);
+
+    function unlock() {
+        clearTimeout(timeoutId);
+        cancelAnimationFrame(rafId);
+        scrollElement.style.overflow = prevOverflow;
+        scrollElement.style.overflowY = prevOverflowY;
+    }
+
+    return unlock;
+}
+// the phone experience is not great in scroll snap align so do something
+</script>
+
+
+
+
+
+</body></html>
